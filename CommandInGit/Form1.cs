@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CommandInGit
@@ -19,7 +12,18 @@ namespace CommandInGit
 
         private void buttonPlus_Click(object sender, EventArgs e)
         {
-            textBoxResult.Text = (int.Parse(textBox1.Text) + int.Parse(textBox2.Text)).ToString();
+            if (!int.TryParse(textBox1.Text, out int val1))
+            {
+                MessageBox.Show("Введите целое число 1");
+                return;
+            }
+            if (!int.TryParse(textBox2.Text, out int val2))
+            {
+                MessageBox.Show("Введите целое число 2");
+                return;
+            }
+
+            textBoxResult.Text = (val1 + val2).ToString();
         }
 
         private void buttonMinus_Click(object sender, EventArgs e)
