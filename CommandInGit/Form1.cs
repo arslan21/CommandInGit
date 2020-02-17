@@ -16,5 +16,25 @@ namespace CommandInGit
         {
             InitializeComponent();
         }
+
+        private void buttonPlus_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonMinus_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonMulti_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonDivision_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
