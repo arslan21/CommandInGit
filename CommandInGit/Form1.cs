@@ -19,7 +19,7 @@ namespace CommandInGit
 
         private void buttonPlus_Click(object sender, EventArgs e)
         {
-
+            textBoxResult.Text = (int.Parse(textBox1.Text) + int.Parse(textBox2.Text)).ToString();
         }
 
         private void buttonMinus_Click(object sender, EventArgs e)
